@@ -1,4 +1,3 @@
-pub mod pow;
 pub mod reverse_integer;
 pub mod valid_parenthesis;
 pub mod palindrome_number;
