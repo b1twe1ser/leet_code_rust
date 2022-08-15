@@ -1,13 +1,6 @@
 pub fn valid_parenthesis(s: String) -> bool {
-    // []
-    // {}
-    // ()
-    //
     let mut input = s;
 
-    // for parens pair
-    // while input contains parens pair remove it
-    //
     let mut contains_bracket = input.contains("[]");
     let mut contains_fancy = input.contains("{}");
     let mut contains_round = input.contains("()");
@@ -26,9 +19,10 @@ pub fn valid_parenthesis(s: String) -> bool {
     }
     input.len() == 0
 
+    // UPGRADE TIME COMPLEXITY STEPS  
     //  make an enum of paren types, and have a stack. When you find an opening paren,
     //  push that to the stack. When you find a closing paren, pop the top value from the stack
-    //  , and if it is of the correct paren type, continue. Otherwise, return false.
+    //  and if it is of the correct paren type, continue. Otherwise, return false.
 }
 
 #[cfg(test)]
